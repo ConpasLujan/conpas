@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "fuente-local";
+  src: url("../../assets/fonts/bahnschrift.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background-color: #fffaff;
+  font-family: 'Roboto', sans-serif;
+  color: #1e1b18; }
+  html a {
+    text-decoration: none;
+    color: #1e1b18; }
+  html button {
+    font-family: 'Roboto', sans-serif; }
+
+.invisible {
+  display: none !important; }
+
+header {
+  box-shadow: 10px 10px 20px #c2bec2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%; }
+  header .header__direccion {
+    background-color: #0a2463;
+    color: #fffaff;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1%; }
+  header .header__div {
+    background-color: #fffaff;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    max-width: 1000px;
+    padding: 5% 2%; }
+    header .header__div .logo {
+      width: 30%;
+      cursor: pointer; }
+      header .header__div .logo img {
+        width: 100%; }
+    header .header__div .navbar {
+      display: flex;
+      justify-content: flex-end;
+      width: 70%; }
+      header .header__div .navbar a {
+        margin-left: 5%;
+        font-weight: 600; }
+        header .header__div .navbar a:hover {
+          color: #d8315b;
+          transition: all ease-in-out 0.3s; }
+
+/* footer */
+footer {
+  height: 100px; }
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .foot .logo-footer {
+    padding: 1rem 0;
+    background-color: #0a2463; }
+    .foot .logo-footer a img {
+      width: 100px; }
+  .foot .redes-footer {
+    background-color: #fffaff;
+    padding: .6rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .5rem; }
+      .foot .redes-footer a .img-insta {
+        width: 18px; }
+      .foot .redes-footer a .img-whats {
+        width: 18px; }
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.catalogo {
+  margin: 0 2% 5%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column; }
+  .catalogo .catalogo__presentacion {
+    margin: 2% 0%; }
+  .catalogo .buscador {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .catalogo .buscador span {
+      color: #0a2463; }
+    .catalogo .buscador input::placeholder {
+      color: #3e92cc;
+      font-weight: 700; }
+    .catalogo .buscador input[type="search"]::-webkit-search-decoration,
+    .catalogo .buscador input[type="search"]::-webkit-search-cancel-button,
+    .catalogo .buscador input[type="search"]::-webkit-search-results-button,
+    .catalogo .buscador input[type="search"]::-webkit-search-results-decoration {
+      display: none; }
+    .catalogo .buscador #buscador {
+      border: none;
+      width: 75%;
+      padding: 15px;
+      background-color: #fffaff;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
+      margin-right: 2%;
+      min-width: 250px; }
+    .catalogo .buscador .buscador__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(145deg, #429cda, #3883b8);
+      box-shadow: 5px 5px 5px #c2bec2, -5px -5px 5px #fff;
+      padding: 15px;
+      height: 20px;
+      width: 20px; }
+      .catalogo .buscador .buscador__div span {
+        color: #fff; }
+  .catalogo .catalogo__div {
+    margin: 2% 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .catalogo .catalogo__div .card {
+      background-color: #fffaff;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
+      margin: 3%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      .catalogo .catalogo__div .card p {
+        font-size: 0.8rem; }
+      .catalogo .catalogo__div .card .card__img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .catalogo .catalogo__div .card .card__img img {
+          background-color: #fffaff;
+          border-radius: 10px;
+          box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
+          height: 90%;
+          width: 90%;
+          margin: 5% auto;
+          overflow: hidden;
+          object-fit: cover;
+          border-radius: 15px; }
+      .catalogo .catalogo__div .card .card__nombre {
+        padding: 0% 6% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; }
+        .catalogo .catalogo__div .card .card__nombre .oferta-txt, .catalogo .catalogo__div .card .card__nombre .precio {
+          text-align: end; }
+        .catalogo .catalogo__div .card .card__nombre .oferta-txt {
+          font-weight: 700;
+          color: #d8315b;
+          overflow-wrap: break-word; }
+        .catalogo .catalogo__div .card .card__nombre h3 {
+          max-width: 65%;
+          height: auto;
+          overflow-wrap: break-word;
+          font-size: 1rem; }
+      .catalogo .catalogo__div .card .descripcion {
+        margin: 0% 6% 2%; }
+      .catalogo .catalogo__div .card button {
+        margin: 5% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(145deg, #429cda, #3883b8);
+        box-shadow: 5px 5px 5px #c2bec2, -5px -5px 5px #fff;
+        position: relative; }
+        .catalogo .catalogo__div .card button img {
+          width: 1rem;
+          margin-right: 0.5rem; }
+        .catalogo .catalogo__div .card button:hover {
+          transition: ease 0.5s;
+          color: #fff;
+          font-weight: 600;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          background: #d8315b;
+          background: linear-gradient(145deg, #c22c52, #e73461);
+          box-shadow: 5px 5px 15px #6b6b6b, -5px -5px 15px #fff; }
+        .catalogo .catalogo__div .card button:focus {
+          transition: all 0s;
+          color: #fff;
+          font-weight: 600;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          background: #d8315b;
+          box-shadow: inset 2px 2px 12px #861e38, inset -4px -4px 12px #ff447e; }
+        .catalogo .catalogo__div .card button:disabled {
+          cursor: default;
+          color: #fffaff;
+          background: linear-gradient(145deg, #c2bec2, #c2bec2);
+          box-shadow: 5px 5px 5px #6b6b6b, -5px -5px 5px #fff; }
+
+.disable img {
+  filter: grayscale(75) opacity(80%); }
+
+.disable p, .disable h3 {
+  filter: grayscale(100) opacity(50%); }
+
+.nosotros {
+  max-width: 868px;
+  margin: 2rem 1rem;
+  box-shadow: 10px 10px 20px #c2bec2;
+  border-radius: 10px;
+  padding: .5rem 1rem; }
+  .nosotros div h1, .nosotros div h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: .4rem 0; }
+  .nosotros div p {
+    font-size: 1rem; }
+  .nosotros div div {
+    display: flex;
+    align-items: center; }
+    .nosotros div div svg {
+      width: 1rem;
+      margin: 0 .2rem 0 0; }
+  .nosotros .nosotros-info p {
+    margin: .2rem 0; }
+
+@media (min-width: 576px) {
+  header {
+    margin-bottom: 5%; }
+    header .header__div {
+      padding: 5% 5%; }
+  .catalogo {
+    margin: 0 5% 5%; }
+    .catalogo .buscador #buscador {
+      width: 65%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(2, 1fr); }
+      .catalogo .catalogo__div .card p {
+        font-size: 1rem; }
+      .catalogo .catalogo__div .card .card__nombre h3 {
+        font-size: 1.17rem; }
+  .nosotros div h1, .nosotros div h2 {
+    font-size: 1.8rem;
+    margin: .6rem 0; }
+  .nosotros div p {
+    font-size: 1.2rem; }
+  .nosotros div div svg {
+    width: 20px;
+    margin: 0 .4rem 0 0; }
+  .nosotros .nosotros-info p {
+    margin: .3rem 0; } }
+
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 5%; }
+    header .header__div {
+      padding: 5% 10%; }
+  .catalogo {
+    margin: 0 10% 5%; }
+    .catalogo .buscador #buscador {
+      width: 60%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(3, 1fr); }
+  .foot .logo-footer {
+    padding: 1.2rem; }
+    .foot .logo-footer a img {
+      width: 120px; }
+  .foot .redes-footer {
+    padding: .6rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .6rem; }
+      .foot .redes-footer a .img-whats {
+        width: 22px; }
+      .foot .redes-footer a .img-insta {
+        width: 22px; }
+  .nosotros {
+    margin: 2rem auto; } }
+
+@media (min-width: 992px) {
+  header {
+    margin-bottom: 3%; }
+    header .header__div {
+      padding: 3% 12%;
+      max-width: 100%; }
+  .catalogo {
+    margin: 0 12% 5%; }
+    .catalogo .buscador #buscador {
+      width: 55%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(3, 1fr); }
+  .nosotros {
+    margin: 3rem auto;
+    padding: 1.5rem; }
+    .nosotros div h1, .nosotros div h2 {
+      font-size: 2rem; }
+    .nosotros div p {
+      font-size: 1.5rem; }
+    .nosotros div div svg {
+      width: 24px;
+      margin: 0 .8rem 0 0; } }
+
+@media (min-width: 1200px) {
+  header {
+    margin-bottom: 3%; }
+    header .header__div {
+      padding: 3% 15%;
+      max-width: 80%; }
+  .catalogo {
+    margin: 0 15% 5%; }
+    .catalogo .buscador #buscador {
+      width: 50%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(4, 1fr); }
+  .foot .logo-footer {
+    padding: 1.5rem; }
+    .foot .logo-footer a img {
+      width: 140px; }
+  .foot .redes-footer {
+    padding: .8rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .7rem; }
+      .foot .redes-footer a .img-whats {
+        width: 26px; }
+      .foot .redes-footer a .img-insta {
+        width: 26px; } }
+
+@media (min-width: 1400px) {
+  header {
+    margin-bottom: 3%; }
+    header .header__div {
+      padding: 2% 15%;
+      max-width: 70%; }
+  .catalogo {
+    margin: 0 15% 5%; }
+    .catalogo .buscador #buscador {
+      width: 50%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(4, 1fr); } }
